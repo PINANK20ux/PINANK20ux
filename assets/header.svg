@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1322" />
+      <stop offset="100%" stop-color="#090c16" />
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14192d" />
+      <stop offset="100%" stop-color="#0e1220" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Avatar Glow Gradient -->
+    <linearGradient id="avatarBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="avatarInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#2e1065" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-title { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-size: 26px; font-weight: 800; fill: #ffffff; letter-spacing: 0.5px; }
+    .font-subtitle { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-size: 13px; font-weight: 500; fill: #94a3b8; line-height: 1.4; }
+    .font-sec-header { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #e2e8f0; letter-spacing: 0.8px; }
+    .font-body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-size: 12px; fill: #cbd5e1; }
+    .font-subbody { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-size: 11px; fill: #94a3b8; }
+    .font-pill { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #c084fc; }
+  </style>
+
+  <!-- Container Base -->
+  <rect width="900" height="320" rx="16" fill="url(#bgGrad)" stroke="#1e2746" stroke-width="1.2" />
+
+  <!-- LEFT CARD: Visual Monogram / Avatar Frame -->
+  <g transform="translate(20, 20)">
+    <rect width="210" height="280" rx="14" fill="url(#cardGrad)" stroke="#222b4c" stroke-width="1.2" />
+    <!-- Gradient Border Ring -->
+    <rect x="18" y="18" width="174" height="244" rx="12" fill="none" stroke="url(#avatarBorder)" stroke-width="2" />
+    <rect x="22" y="22" width="166" height="236" rx="10" fill="url(#avatarInner)" />
+
+    <!-- Stylized Geometric Vector Art / Monogram inside Avatar -->
+    <g transform="translate(105, 120)">
+      <!-- Outer diamond/circle decorative aura -->
+      <circle cx="0" cy="0" r="54" fill="none" stroke="#a855f7" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 3" />
+      <circle cx="0" cy="0" r="46" fill="none" stroke="#ec4899" stroke-width="1" stroke-opacity="0.4" />
+      
+      <!-- Central Graphic Monogram 'P' & Creative Symbols -->
+      <polygon points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18" fill="#181534" stroke="url(#avatarBorder)" stroke-width="2.2" />
+      <path d="M -12 -18 L 4 -18 C 14 -18, 14 0, 4 0 L -12 0 Z M -12 0 L -12 18" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      
+      <!-- Glowing orbiting dots -->
+      <circle cx="31" cy="-18" r="3.5" fill="#38bdf8" filter="url(#neonGlow)" />
+      <circle cx="-31" cy="18" r="3.5" fill="#ec4899" filter="url(#neonGlow)" />
+      <circle cx="0" cy="36" r="3.5" fill="#a855f7" filter="url(#neonGlow)" />
+    </g>
+
+    <!-- Tag at bottom of avatar -->
+    <rect x="35" y="220" width="140" height="24" rx="6" fill="#111827" stroke="#312e81" stroke-width="1" />
+    <text x="105" y="236" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="1.2">PINANK20UX</text>
+  </g>
+
+  <!-- CENTER CARD: Identity & Core Focus -->
+  <g transform="translate(250, 20)">
+    <rect width="360" height="280" rx="14" fill="url(#cardGrad)" stroke="#222b4c" stroke-width="1.2" />
+
+    <!-- Name & Tagline -->
+    <text x="24" y="44" class="font-title">PINANK</text>
+    <rect x="24" y="52" width="70" height="3" rx="1.5" fill="url(#avatarBorder)" />
+    
+    <text x="24" y="76" class="font-subtitle">Multidisciplinary Graphic Designer</text>
+    <text x="24" y="94" class="font-subtitle">&amp; Digital Visual Artist</text>
+
+    <!-- Core Directions Section -->
+    <g transform="translate(24, 115)">
+      <text x="0" y="16" class="font-sec-header">CORE FOCUS</text>
+      <circle cx="95" cy="12" r="3" fill="#a855f7" filter="url(#neonGlow)" />
+
+      <!-- Direction List with neon bullet dots -->
+      <g transform="translate(0, 32)">
+        <circle cx="4" cy="8" r="3" fill="#ec4899" />
+        <text x="16" y="12" class="font-body">Brand Identity &amp; Logo Architecture</text>
+      </g>
+      <g transform="translate(0, 56)">
+        <circle cx="4" cy="8" r="3" fill="#a855f7" />
+        <text x="16" y="12" class="font-body">Digital Illustration &amp; Visual Art</text>
+      </g>
+      <g transform="translate(0, 80)">
+        <circle cx="4" cy="8" r="3" fill="#818cf8" />
+        <text x="16" y="12" class="font-body">Editorial &amp; Expressive Typography</text>
+      </g>
+      <g transform="translate(0, 104)">
+        <circle cx="4" cy="8" r="3" fill="#38bdf8" />
+        <text x="16" y="12" class="font-body">3D Modeling &amp; CGI Concept Design</text>
+      </g>
+      <g transform="translate(0, 128)">
+        <circle cx="4" cy="8" r="3" fill="#10b981" />
+        <text x="16" y="12" class="font-body">UI Layouts, Spatial &amp; Motion Assets</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT CARD: Current Status & Highlights -->
+  <g transform="translate(630, 20)">
+    <rect width="250" height="280" rx="14" fill="url(#cardGrad)" stroke="#222b4c" stroke-width="1.2" />
+
+    <!-- Current Header & Status Orb -->
+    <g transform="translate(20, 25)">
+      <text x="0" y="18" class="font-sec-header">NOW / STATUS</text>
+      
+      <!-- Pulsing Online Indicator -->
+      <circle cx="190" cy="14" r="5" fill="#10b981" filter="url(#neonGlow)" />
+      <circle cx="190" cy="14" r="9" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4" />
+
+      <text x="0" y="44" class="font-subbody">Active visual artist working on brand</text>
+      <text x="0" y="58" class="font-subbody">identities and immersive creative media.</text>
+
+      <!-- Badges: Freelance & Collaborative -->
+      <g transform="translate(0, 72)">
+        <rect width="90" height="24" rx="6" fill="#1e1838" stroke="#7e22ce" stroke-width="1" />
+        <text x="45" y="16" text-anchor="middle" class="font-pill">FREELANCE</text>
+
+        <rect x="98" y="0" width="105" height="24" rx="6" fill="#132438" stroke="#0284c7" stroke-width="1" />
+        <text x="150" y="16" text-anchor="middle" class="font-pill" fill="#38bdf8">COLLAB / CONTRACT</text>
+      </g>
+
+      <!-- Highlights list -->
+      <g transform="translate(0, 114)">
+        <line x1="0" y1="0" x2="210" y2="0" stroke="#1e2746" stroke-width="1" />
+        
+        <g transform="translate(0, 18)">
+          <text x="0" y="0" class="font-subbody" fill="#64748b">— Availability:</text>
+          <text x="75" y="0" class="font-subbody" fill="#e2e8f0" font-weight="600">Open for Projects</text>
+        </g>
+        <g transform="translate(0, 38)">
+          <text x="0" y="0" class="font-subbody" fill="#64748b">— Primary Mode:</text>
+          <text x="88" y="0" class="font-subbody" fill="#cbd5e1">Remote / Worldwide</text>
+        </g>
+        <g transform="translate(0, 58)">
+          <text x="0" y="0" class="font-subbody" fill="#64748b">— Aesthetic:</text>
+          <text x="65" y="0" class="font-subbody" fill="#cbd5e1">Futuristic &amp; Modern</text>
+        </g>
+        <g transform="translate(0, 78)">
+          <text x="0" y="0" class="font-subbody" fill="#64748b">— Deliverables:</text>
+          <text x="75" y="0" class="font-subbody" fill="#cbd5e1">Vectors, 3D, Assets</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
